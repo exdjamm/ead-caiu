@@ -1,0 +1,35 @@
+{
+  "name": "ead-caiu",
+  "version": "1.0.0",
+  "description": "Sitezinho top (Agora com back)",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^10.0.8",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "next dev",
+  	"build": "next build",
+  	"start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/exodojaffar/ead-caiu.git"
+  },
+  "keywords": [
+    "ead",
+    "ifms",
+    "ead",
+    "ifms",
+    "caiu",
+    "offline"
+  ],
+  "author": "Exodo Jaffar",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/exodojaffar/ead-caiu/issues"
+  },
+  "homepage": "https://github.com/exodojaffar/ead-caiu#readme"
+}
