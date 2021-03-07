@@ -4,8 +4,10 @@
   "description": "Sitezinho top (Agora com back)",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^4.6.0",
     "next": "^10.0.8",
     "react": "^17.0.1",
+    "react-bootstrap": "^1.5.1",
     "react-dom": "^17.0.1",
     "swr": "^0.4.2"
   },
