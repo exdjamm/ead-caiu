@@ -87,20 +87,30 @@ const estilo = {
 
 const fetcher = async (url) => {
 	const res = await fetch(url, {method:"POST"})
+	
+	if (res.status != 200){
+	    return {
+	        status: false,
+	        timeout: true
+	    };
+	}
+	
 	return res.json()
 }
 
-const estadoEad = (okay) => {
+const estadoEad = (okay, timeout) => {
 
 	let text;
-
-
+    
 	if (okay == true){
 		text = 'Não, volte a fazer atividades.';
 	}else{
 		text = "Sim, tenha um otimo dia";
-		
 	}
+	
+	if(timeout){
+        text = "Possivelmente, sei não fikkkkk";
+    }
 
 	return text
 }
@@ -155,7 +165,7 @@ const Home =  () => {
 							() => { 
 								setLoging(false)
 								fetcher('./api/see-online').then((data) => {
-									setOnOff(data.status)
+									setOnOff(data.status, data.timeout)
 									setLoging(true)
 								})
 							}
