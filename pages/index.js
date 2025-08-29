@@ -143,7 +143,7 @@ const Home =  () => {
 
 	console.table({dark, modo, classBorder})
 
-	fetcher('/api/see-online').then((data) => {
+	fetcher(process.env.URL+'/api/see-online').then((data) => {
 		setOnOff(data.status)
 		setLoging(true)
 	});
